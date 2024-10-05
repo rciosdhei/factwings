@@ -3,7 +3,7 @@ var app = express()
 var cors = require('cors')
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/factwings');
+var db = monk('127.0.0.1:27017/factwings');
 
 app.use(function(req, res, next) {
     req.db = db;
